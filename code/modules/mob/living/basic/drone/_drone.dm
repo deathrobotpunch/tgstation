@@ -47,6 +47,10 @@
 	lighting_cutoff_green = 35
 	lighting_cutoff_blue = 25
 	can_be_held = TRUE
+	if (client && client.membership)
+            default_headwear = /obj/item/clothing/head/chameleon/drone
+        else
+            return
 	worn_slot_flags = ITEM_SLOT_HEAD
 	/// `TRUE` if we have picked our visual appearance, `FALSE` otherwise (default)
 	var/picked = FALSE
